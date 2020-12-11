@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
+
+<script>
+    const menu = {
+        "Burger": 10,
+        "Salad": 6,
+        "Steak": 22
+    }
+
+    const side = {
+        "fries": 1,
+        "soup": 2,
+        "baker": 3
+    }
+
+    alert("Welcome to The Pub!")
+
+    const diner = () => {
+        let foodArray = Object.keys(menu)
+        let sideArray = Object.keys(side)
+        let chosenEntree = prompt(`What would you like to eat?\n\n${foodArray}`)
+        alert(`Amazing!  I love the ${chosenEntree}!!`)
+        let chosenSide = prompt(`What would you like for your side?\n\n${sideArray}`)
+        alert(`Good choice.  the ${chosenSide} is really good today!`)
+        alert(`Awesome, the ${chosenEntree} and ${chosenSide} is $${menu[chosenEntree] + side[chosenSide]}. Thanks for stopping in!`)
+    }
+
+
+    diner()
+</script>
+</html>
